@@ -1,114 +1,112 @@
-* {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background-color: #ebebeb;
-}
-
-.container {
+.energy-slider {
   width: 100%;
-  max-width: 1200px;
+  background-color: #f6f6f6;
 }
 
-/* Heading + Button */
-.container .heading-btn {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 20px 40px;
-  flex-wrap: wrap;
-  gap: 10px;
+.energy-slider h2 {
+  flex: 1;
+  text-align: left;
 }
 
-.container .heading-btn h2 {
-  font-size: 1.3rem;
-  font-weight: 700;
-  text-transform: uppercase;
+.view-all-btn {
+  background-color: #f9b500;
   color: #000;
-}
-
-.container .heading-btn .btn {
-  background: #f9b500;
-  border: none;
-  padding: 8px 18px;
-  font-size: 0.95rem;
   font-weight: 600;
   border-radius: 6px;
-  cursor: pointer;
-  transition: 0.3s ease;
+  padding: 8px 18px;
+  white-space: nowrap;
+  border: none;
+}
+
+.view-all-btn:hover {
+  background-color: #f9b500;
   color: #000;
 }
 
-.container .heading-btn .btn:hover {
-  background: #e09c00;
-}
-
-/* Card wrapper */
-.card-wrapper {
-  margin: 20px 40px 40px;
-  padding: 20px 10px;
-  overflow: hidden;
-}
-
-.card-list .card-item {
-  list-style: none;
-}
-
-.card-list .card-item .card-link {
-  user-select: none;
-  display: block;
-  background-color: #fff;
+.card-link {
   text-decoration: none;
-  padding: 20px;
-  border-radius: 12px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: inherit;
 }
 
-.card-list .card-item .card-link:hover {
-  transform: translateY(-6px);
+.card-link:hover .card {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  transition: 0.3s ease-in-out;
 }
 
-.card-list .card-link .card-image {
-  width: 100%;
-  height: 200px;       
-  object-fit: contain; 
-  border-radius: 10px;
-  background: #fff;    
+.card-img-top {
+  height: 200px;
+  object-fit: contain;
 }
 
-
-.card-list .card-link .badge {
-  color: #000;
-  margin: 16px 0 12px;
-  padding: 6px 14px;
-  font-size: 0.9rem;
-  font-weight: 500;
-  /* background: #dde4ff; */
-  width: fit-content;
-  border-radius: 50px;
-  display: flex;
+.card-body .badge {
+  background-color: #fff !important;
+  color: #000 !important;
+  font-size: 0.8rem;
+  padding: 4px 10px !important;
+  display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 4px;
+  border-radius: 50px;
 }
 
-.card-list .card-link .badge .flag {
-  width: 18px;
-  height: 12px;
+.card-body .badge img {
+  width: 30px;
+  height: 18px;
   border-radius: 2px;
   object-fit: cover;
 }
 
-.card-list .card-link .card-title {
-  font-size: 1.1rem;
-  color: #000;
-  font-weight: 600;
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: transparent ;  
+  background: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  margin-top: 0; 
+}
+
+/* Completely remove Swiper's default content */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: '' ;
+  display: none;
+}
+
+/* Add custom thin chevrons using pseudo-elements */
+.swiper-button-prev::before,
+.swiper-button-next::before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  position: absolute;
+}
+
+.swiper-button-prev::before {
+  transform: rotate(-135deg); /* left arrow */
+}
+
+.swiper-button-next::before {
+  transform: rotate(45deg);   /* right arrow */
+}
+
+.swiper-button-prev {
+  left: -20px;
+}
+
+.swiper-button-next {
+  right: -20px;
+}
+
+
+.card-wrapper {
+  position: relative;
 }
