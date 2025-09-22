@@ -1,116 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Card Slider</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Energy Drink Slider</title>
 
-    <!-- Google Icons -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded"
-    />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 
-    <!-- Swiper CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
-    />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-light">
 
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container swiper">
-      <!-- Heading -->
-      <div class="heading-btn">
-        <h2>MOST POPULAR ENERGY DRINK BRANDS NOW AVAILABLE IN INDIA</h2>
-        <button class="btn">View All</button>
+  <section class="energy-slider d-flex flex-column justify-content-center align-items-center min-vh-100">
+    <div class="container-fluid">
+      <div class="d-flex justify-content-between align-items-center mb-3 px-4 w-100">
+        <h2 class="fw-bold text-uppercase fs-5 mb-0 text-start">
+          MOST POPULAR ENERGY DRINK BRANDS NOW AVAILABLE IN INDIA
+        </h2>
+        <button class="btn view-all-btn">View All</button>
       </div>
 
-      <div class="card-wrapper">
-        <ul class="card-list swiper-wrapper">
-          <li class="card-item swiper-slide">
+      <!-- Swiper Slider -->
+      <div class="card-wrapper swiper w-100 px-4">
+        <ul class="swiper-wrapper list-unstyled">
+          
+          <li class="swiper-slide">
             <a href="#" class="card-link">
-              <img src="prime.jpg" alt="card-image" class="card-image" />
-              <p class="badge">
-                <img src="us.png" class="flag" alt="US Flag" /> US Store
-              </p>
-              <h2 class="card-title">Lucozade Energy Drink</h2>
+              <div class="card border-0 shadow-sm">
+                <img src="bang.jpg" class="card-img-top p-3" alt="Prime" />
+                <div class="card-body">
+                  <span class="badge d-inline-flex align-items-center gap-2 rounded-pill px-3 py-2 mb-2">
+                    <img src="us.png" /> US Store
+                  </span>
+                  <h5 class="card-title">Bang Energy Drink</h5>
+                </div>
+              </div>
             </a>
           </li>
-          <li class="card-item swiper-slide">
+          <li class="swiper-slide">
             <a href="#" class="card-link">
-              <img src="prime2.jpg" alt="card-image" class="card-image" />
-              <p class="badge">
-                <img src="us.png" class="flag" alt="US Flag" /> US Store
-              </p>
-              <h2 class="card-title">Rockstar Energy Drink</h2>
+              <div class="card border-0 shadow-sm">
+                <img src="ghost.jpg" class="card-img-top p-3" alt="Prime" />
+                <div class="card-body">
+                  <span class="badge d-inline-flex align-items-center gap-2 rounded-pill px-3 py-2 mb-2">
+                    <img src="us.png" /> US Store
+                  </span>
+                  <h5 class="card-title">Ghost Energy Drink</h5>
+                </div>
+              </div>
             </a>
           </li>
-          <li class="card-item swiper-slide">
+          <li class="swiper-slide">
             <a href="#" class="card-link">
-              <img src="prime3.jpg" alt="card-image" class="card-image" />
-              <p class="badge">
-                <img src="us.png" class="flag" alt="US Flag" /> US Store
-              </p>
-              <h2 class="card-title">Reign Energy Drink</h2>
+              <div class="card border-0 shadow-sm">
+                <img src="lucozade.jpg" class="card-img-top p-3" alt="Prime" />
+                <div class="card-body">
+                  <span class="badge d-inline-flex align-items-center gap-2 rounded-pill px-3 py-2 mb-2">
+                    <img src="us.png" /> US Store
+                  </span>
+                  <h5 class="card-title">Lucozade Energy Drink</h5>
+                </div>
+              </div>
             </a>
           </li>
-          <li class="card-item swiper-slide">
+          <li class="swiper-slide">
             <a href="#" class="card-link">
-              <img src="prime4.jpg" alt="card-image" class="card-image" />
-              <p class="badge">
-                <img src="us.png" class="flag" alt="US Flag" /> US Store
-              </p>
-              <h2 class="card-title">Ghost Energy Drink</h2>
+              <div class="card border-0 shadow-sm">
+                <img src="nocco.jpg" class="card-img-top p-3" alt="Prime" />
+                <div class="card-body">
+                  <span class="badge d-inline-flex align-items-center gap-2 rounded-pill px-3 py-2 mb-2">
+                    <img src="us.png" /> US Store
+                  </span>
+                  <h5 class="card-title">Nocco Energy Drink</h5>
+                </div>
+              </div>
             </a>
           </li>
-          <li class="card-item swiper-slide">
+          <li class="swiper-slide">
             <a href="#" class="card-link">
-              <img src="prime5.jpg" alt="card-image" class="card-image" />
-              <p class="badge">
-                <img src="us.png" class="flag" alt="US Flag" /> US Store
-              </p>
-              <h2 class="card-title">Nicco Energy Drink</h2>
+              <div class="card border-0 shadow-sm">
+                <img src="nos.jpg" class="card-img-top p-3" alt="Prime" />
+                <div class="card-body">
+                  <span class="badge d-inline-flex align-items-center gap-2 rounded-pill px-3 py-2 mb-2">
+                    <img src="us.png" /> US Store
+                  </span>
+                  <h5 class="card-title">NOS Energy Drink</h5>
+                </div>
+              </div>
             </a>
           </li>
-          <li class="card-item swiper-slide">
+          <li class="swiper-slide">
             <a href="#" class="card-link">
-              <img src="prime6.jpg" alt="card-image" class="card-image" />
-              <p class="badge">
-                <img src="us.png" class="flag" alt="US Flag" /> US Store
-              </p>
-              <h2 class="card-title">Prime Energy Drink</h2>
+              <div class="card border-0 shadow-sm">
+                <img src="prime.jpg" class="card-img-top p-3" alt="Prime" />
+                <div class="card-body">
+                  <span class="badge d-inline-flex align-items-center gap-2 rounded-pill px-3 py-2 mb-2">
+                    <img src="us.png" /> US Store
+                  </span>
+                  <h5 class="card-title">Prime Energy Drink</h5>
+                </div>
+              </div>
             </a>
           </li>
-          <li class="card-item swiper-slide">
+          <li class="swiper-slide">
             <a href="#" class="card-link">
-              <img src="prime7.jpg" alt="card-image" class="card-image" />
-              <p class="badge">
-                <img src="us.png" class="flag" alt="US Flag" /> US Store
-              </p>
-              <h2 class="card-title">Bang Energy Drink</h2>
+              <div class="card border-0 shadow-sm">
+                <img src="reign.jpg" class="card-img-top p-3" alt="Prime" />
+                <div class="card-body">
+                  <span class="badge d-inline-flex align-items-center gap-2 rounded-pill px-3 py-2 mb-2">
+                    <img src="us.png" /> US Store
+                  </span>
+                  <h5 class="card-title">Reign Energy Drink</h5>
+                </div>
+              </div>
             </a>
           </li>
-          <li class="card-item swiper-slide">
+          <li class="swiper-slide">
             <a href="#" class="card-link">
-              <img src="prime8.jpg" alt="card-image" class="card-image" />
-              <p class="badge">
-                <img src="us.png" class="flag" alt="US Flag" /> US Store
-              </p>
-              <h2 class="card-title">ZOA Energy Drink</h2>
+              <div class="card border-0 shadow-sm">
+                <img src="rockstar.jpg" class="card-img-top p-3" alt="Prime" />
+                <div class="card-body">
+                  <span class="badge d-inline-flex align-items-center gap-2 rounded-pill px-3 py-2 mb-2">
+                    <img src="us.png" /> US Store
+                  </span>
+                  <h5 class="card-title">Rockstar Energy Drink</h5>
+                </div>
+              </div>
             </a>
           </li>
-          <li class="card-item swiper-slide">
+          <li class="swiper-slide">
             <a href="#" class="card-link">
-              <img src="prime2.jpg" alt="card-image" class="card-image" />
-              <p class="badge">
-                <img src="us.png" class="flag" alt="US Flag" /> US Store
-              </p>
-              <h2 class="card-title">ZOS Energy Drink</h2>
+              <div class="card border-0 shadow-sm">
+                <img src="zoa.jpg" class="card-img-top p-3" alt="Prime" />
+                <div class="card-body">
+                  <span class="badge d-inline-flex align-items-center gap-2 rounded-pill px-3 py-2 mb-2">
+                    <img src="us.png" /> US Store
+                  </span>
+                  <h5 class="card-title">ZOA Energy Drink</h5>
+                </div>
+              </div>
             </a>
           </li>
-
         </ul>
 
         <div class="swiper-pagination"></div>
@@ -118,10 +149,10 @@
         <div class="swiper-button-next"></div>
       </div>
     </div>
+  </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
 </html>
-
-
